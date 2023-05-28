@@ -7,8 +7,11 @@ public class Switcher : MonoBehaviour
     public Color norm;
     public Color shadow;
 
+
     public SpriteRenderer spriteRenderer;
 
+    [SerializeField]
+    private float shiftAmount = 2.56f;
     PlayerController controller;
 
     void Awake()
@@ -22,12 +25,14 @@ public class Switcher : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             DimensionManager.Instance.ToggleDimension();
+            var isNormal = DimensionManager.Instance.IsNormal();
             if (controller.Grounded)
             {
-                transform.position = transform.position + Vector3.up * 2.2f * (DimensionManager.Instance.IsNormal() ? 1 : -1);
+                transform.position = transform.position + Vector3.up * 2f * shiftAmount * (isNormal ? 1 : -1);
             }
             controller.Flip();
-            spriteRenderer.color = DimensionManager.Instance.IsNormal() ? norm : shadow;
+            spriteRenderer.color = isNormal ? norm : shadow;
+            spriteRenderer.flipY = !isNormal;
         }
     }
 

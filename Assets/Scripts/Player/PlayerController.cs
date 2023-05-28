@@ -26,10 +26,15 @@ namespace TarodevController
 
         // This is horrible, but for some reason colliders are not fully established when update starts...
         private bool _active;
+
+        private SpriteRenderer spriteRenderer;
+        private Animator animator;
         void Awake()
         {
             Invoke(nameof(Activate), 0.5f);
             _multiplier = _flip ? -1 : 1;
+            animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
         void Activate() => _active = true;
 
@@ -108,6 +113,8 @@ namespace TarodevController
 
 
             _colBelow = groundedCheck;
+
+            animator.SetBool("JUMPING", !groundedCheck);
 
             // The rest
 
@@ -205,6 +212,8 @@ namespace TarodevController
                 // Don't walk through walls
                 _currentHorizontalSpeed = 0;
             }
+            animator.SetBool("WALKING", _currentHorizontalSpeed != 0);
+            spriteRenderer.flipX = _currentHorizontalSpeed < 0;
         }
 
         #endregion
