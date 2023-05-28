@@ -12,24 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: Random_Shadow
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -367049192, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+  m_DefaultSprite: {fileID: 395727036, guid: e380dd0484355416f81e9104c1387a28, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: 302143987, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: 830883310, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: -1248612275, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: -1372247003, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: -1317129865, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: 1777489443, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 2033417475, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 768666347, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: -661885600, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 395727036, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 603467172, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: -888331832, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: -1476952593, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 43991564, guid: e380dd0484355416f81e9104c1387a28, type: 3}
+    - {fileID: 110352843, guid: e380dd0484355416f81e9104c1387a28, type: 3}
     - {fileID: -1192434647, guid: e380dd0484355416f81e9104c1387a28, type: 3}
     - {fileID: -1167484381, guid: e380dd0484355416f81e9104c1387a28, type: 3}
     - {fileID: -377243397, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: -367049192, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: -1867820913, guid: e380dd0484355416f81e9104c1387a28, type: 3}
-    - {fileID: 88240466, guid: e380dd0484355416f81e9104c1387a28, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
