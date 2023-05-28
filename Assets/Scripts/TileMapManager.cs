@@ -5,8 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class TileMapManager : MonoBehaviour
 {
-    [SerializeField] private Tilemap normal;
-    [SerializeField] private Tilemap shadow;
+    [SerializeField] private GameObject normal;
+    [SerializeField] private GameObject shadow;
 
     private void Awake()
     {
@@ -15,12 +15,12 @@ public class TileMapManager : MonoBehaviour
 
     private void DimensionManager_OnDimensionShift(object sender, bool isNormalDimension)
     {
-        normal.gameObject.SetActive(isNormalDimension);
-        shadow.gameObject.SetActive(!isNormalDimension);
+        normal.SetActive(isNormalDimension);
+        shadow.SetActive(!isNormalDimension);
     }
 
     private void OnDestroy()
     {
-
+        DimensionManager.OnDimensionShift -= DimensionManager_OnDimensionShift;
     }
 }
