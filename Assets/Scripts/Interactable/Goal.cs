@@ -4,6 +4,8 @@ public class Goal : MonoBehaviour, IInteractable
     [SerializeField] private ParticleSystem winParticles;
     [SerializeField] private AudioClip onHitSFX;
 
+    [SerializeField] private float nextLevelTime = 2f;
+
     private void Awake()
     {
         winParticles.Stop();
@@ -13,7 +15,7 @@ public class Goal : MonoBehaviour, IInteractable
         Debug.Log("HIT FLAG");
         winParticles.Play();
         AudioManager.Instance.PlaySFX(onHitSFX);
-        Invoke("StartNextLevel", 1f);
+        Invoke("StartNextLevel", );
         GetComponent<Collider2D>().enabled = false;
     }
 
