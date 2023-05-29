@@ -195,12 +195,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1697214848}
     m_Modifications:
+    - target: {fileID: 5834060039477896944, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834060039477896944, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834060039477896944, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5834060041136455460, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
       propertyPath: m_Name
       value: Backgrounds
       objectReference: {fileID: 0}
     - target: {fileID: 5834060041136455461, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834060041136455461, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834060041136455461, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834060041136455461, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834060041136455461, guid: d6b11f3e9675a4c4dbf8e756027ded17, type: 3}
