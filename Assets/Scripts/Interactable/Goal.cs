@@ -13,7 +13,8 @@ public class Goal : MonoBehaviour, IInteractable
         Debug.Log("HIT FLAG");
         winParticles.Play();
         AudioManager.Instance.PlaySFX(onHitSFX);
-        Invoke("StartNextLevel", 5f);
+        Invoke("StartNextLevel", 1f);
+        GetComponent<Collider2D>().enabled = false;
     }
 
     private void StartNextLevel()

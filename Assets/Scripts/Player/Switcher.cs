@@ -33,7 +33,7 @@ public class Switcher : MonoBehaviour
             controller.Flip();
             AudioManager.Instance.PlaySFX(onShiftSFX);
             spriteRenderer.color = isNormal ? norm : shadow;
-            spriteRenderer.flipY = !isNormal;
+            transform.localScale = new Vector3(1, isNormal ? 1 : -1, 1);
         }
     }
 
