@@ -10,8 +10,8 @@ public class Switcher : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
-    [SerializeField]
-    private float shiftAmount = 2.56f;
+    [SerializeField] private float shiftAmount = 2.56f;
+    [SerializeField] private AudioClip onShiftSFX;
     PlayerController controller;
 
     void Awake()
@@ -31,6 +31,7 @@ public class Switcher : MonoBehaviour
                 transform.position = transform.position + Vector3.up * 2f * shiftAmount * (isNormal ? 1 : -1);
             }
             controller.Flip();
+            AudioManager.Instance.PlaySFX(onShiftSFX);
             spriteRenderer.color = isNormal ? norm : shadow;
             spriteRenderer.flipY = !isNormal;
         }

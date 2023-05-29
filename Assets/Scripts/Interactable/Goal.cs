@@ -1,8 +1,8 @@
 using UnityEngine;
 public class Goal : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private ParticleSystem winParticles;
+    [SerializeField] private ParticleSystem winParticles;
+    [SerializeField] private AudioClip onHitSFX;
 
     private void Awake()
     {
@@ -12,6 +12,7 @@ public class Goal : MonoBehaviour, IInteractable
     {
         Debug.Log("HIT FLAG");
         winParticles.Play();
+        AudioManager.Instance.PlaySFX(onHitSFX);
         Invoke("StartNextLevel", 5f);
     }
 

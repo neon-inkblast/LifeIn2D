@@ -144,6 +144,7 @@ MonoBehaviour:
   _jumpApexThreshold: 10
   _coyoteTimeThreshold: 0.1
   _jumpBuffer: 0.1
+  _jumpSFX: {fileID: 8300000, guid: 939fc0ce3fe834f88ac030b9367e2d54, type: 3}
   _jumpEndEarlyGravityModifier: 3
   _freeColliderIterations: 10
 --- !u!114 &1985972615674362081
@@ -162,6 +163,7 @@ MonoBehaviour:
   shadow: {r: 1, g: 0, b: 0.9220362, a: 1}
   spriteRenderer: {fileID: 8157619890574267350}
   shiftAmount: 2
+  onShiftSFX: {fileID: 8300000, guid: aa5477ebaece74e1b84bfc23de8f40d8, type: 3}
 --- !u!114 &4880543533834309700
 MonoBehaviour:
   m_ObjectHideFlags: 0

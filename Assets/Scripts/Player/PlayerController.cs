@@ -255,6 +255,7 @@ namespace TarodevController
         [SerializeField] private float _jumpApexThreshold = 10f;
         [SerializeField] private float _coyoteTimeThreshold = 0.1f;
         [SerializeField] private float _jumpBuffer = 0.1f;
+        [SerializeField] private AudioClip _jumpSFX;
         [SerializeField] private float _jumpEndEarlyGravityModifier = 3;
         private bool _coyoteUsable;
         private bool _endedJumpEarly = true;
@@ -288,6 +289,7 @@ namespace TarodevController
                 _coyoteUsable = false;
                 _timeLeftGrounded = float.MinValue;
                 JumpingThisFrame = true;
+                AudioManager.Instance.PlaySFX(_jumpSFX);
             }
             else
             {

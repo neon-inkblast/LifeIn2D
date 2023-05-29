@@ -22,6 +22,6 @@ public class AudioManager : MonoPersistingSingleton<AudioManager>
 
     public void PlaySFX(AudioClip clip)
     {
-
+        sfxAudio.PlayOneShot(clip);
     }
 }

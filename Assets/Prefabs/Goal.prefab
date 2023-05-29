@@ -4960,3 +4960,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winParticles: {fileID: 1794596219}
+  onHitSFX: {fileID: 8300000, guid: 6277fca154ca341f2a1a0611cbeae672, type: 3}
